@@ -54,13 +54,15 @@ namespace MvcAuthenticationExample.Controllers.Api {
 
             var checkPass = await _signInManager.CheckPasswordSignInAsync(Usuario, Login.Password, true);
             if (checkPass.Succeeded) {
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetValue<string>("SecretKey")));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SecretKey"]));
                 var claims = new ClaimsIdentity();
                 claims.AddClaim(new Claim(ClaimTypes.NameIdentifier, Login.User));
                 claims.AddClaim(new Claim(ClaimTypes.Name, Login.User));
                 var tokenDescriptor = new SecurityTokenDescriptor {
+                    Issuer = _configuration["Issuer"],
+                    Audience = _configuration["Issuer"],
                     Subject = claims,
-                    Expires = DateTime.UtcNow.AddHours(4),
+                    Expires = DateTime.UtcNow.AddMinutes(15),
                     SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature)
                 };
                 var tokenHandler = new JwtSecurityTokenHandler();
