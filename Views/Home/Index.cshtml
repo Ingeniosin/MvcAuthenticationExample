@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_DevExtremeLayout";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@(Html.DevExtreme().DataGrid()
+    .ID("table")
+    .DataSource(d => d.Mvc().Controller("Data").LoadAction("Get").Key("OrderID"))
+    .ShowBorders(true)
+)

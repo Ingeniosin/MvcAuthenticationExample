@@ -1,0 +1,3 @@
+﻿@using MvcAuthenticationExample
+@using MvcAuthenticationExample.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
