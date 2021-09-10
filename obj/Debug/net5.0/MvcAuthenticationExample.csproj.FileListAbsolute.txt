@@ -59,7 +59,6 @@ C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthentica
 C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\obj\Debug\net5.0\ref\MvcAuthenticationExample.dll
 C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\obj\Debug\net5.0\MvcAuthenticationExample.pdb
 C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\obj\Debug\net5.0\MvcAuthenticationExample.genruntimeconfig.cache
-C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\bin\Debug\net5.0\Consumers.json
 C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\bin\Debug\net5.0\DevExtreme.AspNet.Core.dll
 C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\bin\Debug\net5.0\DevExtreme.AspNet.Data.dll
 C:\Users\Juan David\Desktop\Work\Learning\MvcAuthenticationExample\MvcAuthenticationExample\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
